@@ -1,3 +1,17 @@
 .main-container {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  .navbar {
+    position: fixed;
+  }
+  .section-big {
+    padding-left: 200px;
+    height: 1000px;
+    &:nth-of-type(even) {
+      background-color: lightblue;
+    }
+    &:nth-of-type(odd) {
+      background-color: pink;
+    }
+  }
 }
