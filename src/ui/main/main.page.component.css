@@ -1,17 +1,39 @@
-.main-container {
-  display: flex;
-  flex-direction: column;
-  .navbar {
-    position: fixed;
-  }
-  .section-big {
-    padding-left: 200px;
-    height: 1000px;
-    &:nth-of-type(even) {
-      background-color: lightblue;
+#main-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    .content-container {
+        height: 0vh;
+        opacity: 0;
     }
-    &:nth-of-type(odd) {
-      background-color: pink;
+
+    &.clicked {
+        animation: shrink 1.5s cubic-bezier(0.17, 0.04, 0.03, 0.94);
+        animation-fill-mode: forwards;
+        .content-container {
+            display: block;
+            animation: fadein 2s linear;
+            animation-fill-mode: forwards;
+        }
     }
+}
+
+
+@keyframes shrink {
+  0% {
+    height: 100vh;
   }
+  100% {
+    height: 0vh;
+  }
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }

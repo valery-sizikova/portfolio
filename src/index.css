@@ -2,6 +2,8 @@
 
 @import "./ui/another/another.page.component.css";
 @import "./ui/main/main.page.component.css";
+@import "./ui/main/cover.component.css";
+@import "./ui/main/about.component.css";
 
 body {
   margin: 0;
