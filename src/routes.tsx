@@ -3,7 +3,7 @@ import { Route, Switch } from "react-router-dom";
 
 import { RouteDef } from "src/utils/route-helpers";
 
-import LandingPageComponent from "src/ui/main/landing.page.component";
+import LandingPageComponent from "src/ui/landing-page/landing.page.component";
 import AnotherPageComponent from "src/ui/another/another.page.component";
 
 export class Routes {

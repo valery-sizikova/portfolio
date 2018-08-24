@@ -1,6 +1,6 @@
 import * as React from 'react';
-import AboutComponent from './about.component';
 import CoverImageComponent from './cover-image.component';
+import MeComponent from '../me/me.component';
 
 interface IComponentProps { }
 
@@ -16,7 +16,7 @@ export default class LandingPageComponent extends React.Component<IComponentProp
     return (
       <div className="landing-page">
         <div id="content">
-          <AboutComponent />
+          <MeComponent />
         </div>
         <CoverImageComponent contentElementId="content" />
       </div>

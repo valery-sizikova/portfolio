@@ -20,7 +20,7 @@ ShallowWrapper {
         <div
           id="content"
         >
-          <AboutComponent />
+          <MeComponent />
         </div>,
         <CoverImageComponent
           contentElementId="content"
@@ -35,7 +35,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": <AboutComponent />,
+          "children": <MeComponent />,
           "id": "content",
         },
         "ref": null,
@@ -74,7 +74,7 @@ ShallowWrapper {
           <div
             id="content"
           >
-            <AboutComponent />
+            <MeComponent />
           </div>,
           <CoverImageComponent
             contentElementId="content"
@@ -89,7 +89,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": <AboutComponent />,
+            "children": <MeComponent />,
             "id": "content",
           },
           "ref": null,

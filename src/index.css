@@ -3,9 +3,9 @@
 @import "./ui/styles/common-styles.css";
 
 @import "./ui/another/another.page.component.css";
-@import "./ui/main/landing.page.component.css";
-@import "./ui/main/cover-image.component.css";
-@import "./ui/main/about.component.css";
+@import "./ui/landing-page/landing.page.component.css";
+@import "./ui/landing-page/cover-image.component.css";
+@import "./ui/me/me.component.css";
 
 body {
   margin: 0;

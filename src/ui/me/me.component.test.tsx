@@ -1,11 +1,11 @@
 import * as React from "react";
 import { shallow } from 'enzyme';
 
-import AboutComponent from "./about.component";
+import MeComponent from "./me.component";
 
-describe('About component', () => {
+describe('Me component', () => {
   it('renders snapshots', () => {
-    const wrapper = shallow(<AboutComponent />);
+    const wrapper = shallow(<MeComponent />);
     expect(wrapper).toMatchSnapshot()
   })
 })
