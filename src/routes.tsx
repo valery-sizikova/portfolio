@@ -3,7 +3,7 @@ import { Route, Switch } from "react-router-dom";
 
 import { RouteDef } from "src/utils/route-helpers";
 
-import MainPageComponent from "src/ui/main/main.page.component";
+import LandingPageComponent from "src/ui/main/landing.page.component";
 import AnotherPageComponent from "src/ui/another/another.page.component";
 
 export class Routes {
@@ -16,7 +16,7 @@ export class Routes {
                     component={AnotherPageComponent}
                 />
                 {/* Default route will be used in case if nothing matches */}
-                <Route component={MainPageComponent} />
+                <Route component={LandingPageComponent} />
             </Switch>
         );
     }

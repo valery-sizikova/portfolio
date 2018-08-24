@@ -1,0 +1,20 @@
+.landing-page {
+    height: 100vh;
+    position: relative;
+
+    #content {
+        overflow-y: scroll;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        opacity: 0;
+
+        transition-property: all;
+	    transition-duration: 2s;
+	    transition-timing-function: linear;
+
+        &.shown {
+            opacity: 1;
+        }
+    }
+}

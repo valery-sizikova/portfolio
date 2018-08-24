@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
 
+@import "./ui/styles/common-styles.css";
+
 @import "./ui/another/another.page.component.css";
-@import "./ui/main/main.page.component.css";
-@import "./ui/main/cover.component.css";
+@import "./ui/main/landing.page.component.css";
+@import "./ui/main/cover-image.component.css";
 @import "./ui/main/about.component.css";
 
 body {

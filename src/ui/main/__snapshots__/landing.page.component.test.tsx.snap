@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Main page component renders snapshots 1`] = `
+exports[`Landing page component renders snapshots 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <MainPageComponent />,
+  Symbol(enzyme.__unrendered__): <LandingPageComponent />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -17,34 +17,26 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <CoverComponent />,
         <div
-          className="content-container"
+          id="content"
         >
           <AboutComponent />
         </div>,
+        <CoverImageComponent
+          contentElementId="content"
+        />,
       ],
-      "className": "main-container",
-      "id": "main-container",
+      "className": "landing-page",
     },
     "ref": null,
     "rendered": Array [
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "class",
-        "props": Object {},
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
         "nodeType": "host",
         "props": Object {
           "children": <AboutComponent />,
-          "className": "content-container",
+          "id": "content",
         },
         "ref": null,
         "rendered": Object {
@@ -58,6 +50,17 @@ ShallowWrapper {
         },
         "type": "div",
       },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "contentElementId": "content",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
     ],
     "type": "div",
   },
@@ -68,34 +71,26 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <CoverComponent />,
           <div
-            className="content-container"
+            id="content"
           >
             <AboutComponent />
           </div>,
+          <CoverImageComponent
+            contentElementId="content"
+          />,
         ],
-        "className": "main-container",
-        "id": "main-container",
+        "className": "landing-page",
       },
       "ref": null,
       "rendered": Array [
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "class",
-          "props": Object {},
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
           "nodeType": "host",
           "props": Object {
             "children": <AboutComponent />,
-            "className": "content-container",
+            "id": "content",
           },
           "ref": null,
           "rendered": Object {
@@ -108,6 +103,17 @@ ShallowWrapper {
             "type": [Function],
           },
           "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "contentElementId": "content",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
         },
       ],
       "type": "div",
