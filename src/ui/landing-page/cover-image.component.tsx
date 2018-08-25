@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Link } from 'react-router-dom';
 
 interface IComponentProps {
-	isRendered: boolean;
+	location: any;
 	contentElementId: string;
 }
 
@@ -19,7 +19,7 @@ export default class CoverImageComponent extends React.Component<IComponentProps
 	}
 
 	componentDidMount() {
-		if (!this.props.isRendered) {
+		if (this.props.location.pathname !== "/") {
 			this.showContent();
 		}
 	}
@@ -43,6 +43,8 @@ export default class CoverImageComponent extends React.Component<IComponentProps
 	}
 
 	render() {
+		const textVisible = this.props.location.pathname !== "/"
+			&& this.props.location.pathname !== "/me";
 		let tiles: JSX.Element[] = [];
 		for (let i = 0; i < 400; i++) {
 			tiles.push(<div className="landing-tile" key={`tile_${i}`}></div>)
@@ -55,7 +57,7 @@ export default class CoverImageComponent extends React.Component<IComponentProps
 					</>}
 				</div>
 			</div>
-			<div id="slider-landing-text">
+			<div id="slider-landing-text" style={textVisible ? {"display": "none"} : {}}>
 				<div className="landing-text">
 					<Link
 						className={"animated-button inversed diagonal-sliding"}

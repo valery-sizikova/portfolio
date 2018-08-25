@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Link, Switch, Route } from 'react-router-dom';
-import { TransitionGroup, CSSTransition } from 'react-transition-group';
+import { TransitionGroup, CSSTransition, Transition } from 'react-transition-group';
 
 import MyProjectsComponent from '../my-projects/my-projects.component';
 import MyContactsComponent from '../my-contacts/my-contacts.component';
@@ -41,7 +41,7 @@ export default class MainContentComponent extends React.Component<IComponentProp
 						</Link>
 						<Link
 							className={"animated-button small diagonal-sliding "
-								+ (location === "my-contacts" && "selected")}
+								+ (location === "/my-contacts" && "selected")}
 							to={"/my-contacts"}>
 							My contacts
 						</Link>
@@ -51,7 +51,7 @@ export default class MainContentComponent extends React.Component<IComponentProp
 							<CSSTransition
 								key={this.props.location.key}
 								classNames="fade"
-								timeout={300}
+								timeout={800}
 							>
 								<Switch>
 									<Route

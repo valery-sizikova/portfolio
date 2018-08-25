@@ -12,7 +12,7 @@
         flex-direction: column;
 
         transition-property: all;
-	    transition-duration: 2s;
+	    transition-duration: 1s;
 	    transition-timing-function: linear;
 
         &.shown {

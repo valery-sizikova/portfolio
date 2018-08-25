@@ -6,7 +6,7 @@ import CoverImageComponent from "./cover-image.component";
 describe('Cover image component', () => {
   it('renders snapshots', () => {
     const wrapper = shallow(
-      <CoverImageComponent
+      <CoverImageComponent location={""}
         contentElementId="test-content" />
     );
     expect(wrapper).toMatchSnapshot()

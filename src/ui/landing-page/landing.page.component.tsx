@@ -16,7 +16,7 @@ export default class LandingPageComponent extends React.Component<IComponentProp
 					location={this.props.location}
 				/>
 				<CoverImageComponent
-					isRendered={this.props.location.pathname === "/"}
+					location={this.props.location}
 					contentElementId="content"
 				/>
 			</div>

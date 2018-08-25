@@ -1,3 +1,5 @@
+/* Animated buttons */
+
 a.animated-button:link, a.animated-button:visited {
 	position: relative;
 	display: block;
@@ -69,6 +71,7 @@ a.animated-button.inversed.diagonal-sliding:after {
 }
 
 
+/* Transitions styles on rerouting */
 
 .fade-enter {
   opacity: 0;
@@ -77,5 +80,9 @@ a.animated-button.inversed.diagonal-sliding:after {
 
 .fade-enter.fade-enter-active {
   opacity: 1;
-  transition: opacity 2500ms ease-in;
+  transition: opacity 800ms linear;
+}
+
+.fade-exit {
+	display: none;
 }
