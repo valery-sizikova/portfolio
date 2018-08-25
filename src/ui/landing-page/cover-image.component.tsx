@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Link } from 'react-router-dom';
 
 interface IComponentProps {
 	isRendered: boolean;
@@ -56,12 +57,13 @@ export default class CoverImageComponent extends React.Component<IComponentProps
 			</div>
 			<div id="slider-landing-text">
 				<div className="landing-text">
-					<a
-						href="javascript:void(0)"
+					<Link
+						className={"animated-button inversed diagonal-sliding"}
+						to={"/me"}
 						onClick={() => this.showContent()}
-						className="animated-button inversed diagonal-sliding">
+					>
 						It's really cold in Russia, isn't it?
-        			</a>
+						</Link>
 				</div>
 			</div>
 		</>

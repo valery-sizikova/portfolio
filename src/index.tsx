@@ -1,6 +1,6 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { HashRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import registerServiceWorker from './registerServiceWorker';
 import DependecyInjectionSetup from './di-setup';
@@ -12,7 +12,7 @@ DependecyInjectionSetup.setup();
 
 ReactDOM.render(
   <Router>
-    {Routes.getRoutes()}
+    {Routes.getRoutes(location)}
   </Router>,
   document.getElementById('root') as HTMLElement
 );

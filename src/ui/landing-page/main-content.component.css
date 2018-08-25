@@ -20,6 +20,6 @@
 	}
 
 	.main-content-container {
-		overflow-y: scroll;
+		overflow-y: auto;
 	}
 }
