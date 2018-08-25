@@ -52,7 +52,7 @@ export default class CoverImageComponent extends React.Component<IComponentProps
           <a
             href="#"
             onClick={() => this.showContent()}
-            className="animated-button diagonal-sliding">
+            className="animated-button inversed diagonal-sliding">
             It's really cold in Russia, isn't it?
         </a>
         </div>

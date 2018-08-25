@@ -5,6 +5,7 @@
 @import "./ui/another/another.page.component.css";
 @import "./ui/landing-page/landing.page.component.css";
 @import "./ui/landing-page/cover-image.component.css";
+@import "./ui/landing-page/main-content.component.css";
 @import "./ui/me/me.component.css";
 
 body {
