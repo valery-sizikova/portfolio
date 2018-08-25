@@ -16,10 +16,10 @@
 
 	.menu-container {
 		padding: 20px;
-		width: 200px;
+		min-width: 200px;
 	}
 
 	.main-content-container {
-
+		overflow-y: scroll;
 	}
 }

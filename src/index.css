@@ -7,6 +7,8 @@
 @import "./ui/landing-page/cover-image.component.css";
 @import "./ui/landing-page/main-content.component.css";
 @import "./ui/me/me.component.css";
+@import "./ui/my-contacts/my-contacts.component.css";
+@import "./ui/my-projects/my-projects.component.css";
 
 body {
   margin: 0;

@@ -1,6 +1,13 @@
 import * as React from 'react';
+import MyProjectsComponent from '../my-projects/my-projects.component';
+import MyContactsComponent from '../my-contacts/my-contacts.component';
+import MeComponent from '../me/me.component';
+import { Link } from 'react-router-dom';
+import { Routes } from '../../routes';
 
-interface IComponentProps { }
+interface IComponentProps {
+	section: "my-projects" | "my-contacts" | undefined;
+}
 
 interface IComponentState { }
 
@@ -18,27 +25,26 @@ export default class MainContentComponent extends React.Component<IComponentProp
 				</div>
 				<div className="content-container">
 					<section className="menu-container">
-						<a
-							href="#"
-							onClick={() => console.log("me")}
-							className="animated-button small diagonal-sliding">
+						<Link className="animated-button small diagonal-sliding" to={Routes.main.build({
+							section: undefined
+						})}>
 							Me
-        				</a>
-						<a
-							href="#"
-							onClick={() => console.log("me")}
-							className="animated-button small diagonal-sliding">
+						</Link>
+						<Link className="animated-button small diagonal-sliding" to={Routes.main.build({
+							section: "my-projects"
+						})}>
 							My projects
-        				</a>
-						<a
-							href="#"
-							onClick={() => console.log("me")}
-							className="animated-button small diagonal-sliding">
+						</Link>
+						<Link className="animated-button small diagonal-sliding" to={Routes.main.build({
+							section: "my-contacts"
+						})}>
 							My contacts
-        				</a>
+						</Link>
 					</section>
 					<section className="main-content-container">
-						content
+						{this.props.section === "my-contacts" && <MyContactsComponent />}
+						{this.props.section === "my-projects" && <MyProjectsComponent />}
+						{this.props.section === undefined && <MeComponent />}
 					</section>
 				</div>
 			</div>
