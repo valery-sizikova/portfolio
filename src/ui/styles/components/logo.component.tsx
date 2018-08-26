@@ -1,6 +1,11 @@
 import * as React from 'react';
+import { Link } from 'react-router-dom';
 
-export default class LogoComponent extends React.Component<{}, {}> {
+interface IComponentProps {
+	linkTo: string;
+}
+
+export default class LogoComponent extends React.Component<IComponentProps, {}> {
 	render() {
 		let lines = [];
 		for (let i = 0; i <= 8; i++) {
@@ -11,10 +16,10 @@ export default class LogoComponent extends React.Component<{}, {}> {
 			</div>)
 		}
 		return (
-			<div className="logo">
+			<Link to={this.props.linkTo} className="logo">
 				<div className="logo-lines">{lines}</div>
 				<div className="logo-name"></div>
-			</div>
+			</Link>
 		);
 	}
 }

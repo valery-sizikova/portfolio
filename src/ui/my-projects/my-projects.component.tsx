@@ -5,23 +5,14 @@ import trendwatching_logo from "src/ui/styles/images/trendwatching_logo.png";
 
 import InfoItemComponent from '../styles/components/info-item.component';
 
-interface IComponentProps { }
-
-interface IComponentState { }
-
-export default class MyProjectsComponent extends React.Component<IComponentProps, IComponentState> {
-	constructor(props: IComponentProps) {
-		super(props);
-		this.state = {};
-	}
-
+export default class MyProjectsComponent extends React.Component<{}, {}> {
 	render() {
 		return (
 			<div className="my-projects-container">
 				Some description
 				<br />
 				<br />
-				<div className="projects-list grid-x grid-margin-x">
+				<div className="project-list grid-x grid-margin-x">
 					<InfoItemComponent
 						link="https://semmtech.com/products"
 						description="Semmtech project"

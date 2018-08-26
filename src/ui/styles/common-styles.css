@@ -27,8 +27,12 @@ a.animated-button.selected:link, a.animated-button.selected:visited {
 a.animated-button.small:link, a.animated-button.small:visited {
 	padding: 4px 0;
 }
+a.animated-button.pulsing:link, a.animated-button.pulsing:visited {
+	animation: puls 2s linear infinite;
+}
 a.animated-button.inversed:link, a.animated-button.inversed:visited {
 	color: #D24D57;
+	background-color: #FFFFFF90;
 }
 a.animated-button:link:after, a.animated-button:visited:after {
 	content: "";
@@ -79,4 +83,22 @@ a.animated-button.inversed.diagonal-sliding:after {
 
 .fade-exit {
 	display: none;
+}
+
+@keyframes puls {
+	0% {
+		transform: scale(1);
+	}
+	15% {
+		transform: scale(1.03);
+	}
+	22% {
+		transform: scale(1);
+	}
+	30% {
+		transform: scale(1.06)
+	}
+	100% {
+		transform: scale(1);
+	}
 }

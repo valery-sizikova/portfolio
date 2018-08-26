@@ -1,11 +1,8 @@
 .logo {
 	width: 100px;
 	height: 100px;
-	/* background-color: lightgrey; */
 	padding: 10px;
 	margin: 10px 50px;
-	display: flex;
-	flex-direction: column;
 
 	.logo-lines {
 		width: 100%;
@@ -35,6 +32,12 @@
 		&:nth-of-type(odd) {
 			height: 20px;
 		}
+	}
+}
+
+.logo:hover {
+	.animated-line {
+		animation-duration: 0.5s;
 	}
 }
 

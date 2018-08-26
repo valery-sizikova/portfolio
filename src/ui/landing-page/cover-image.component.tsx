@@ -57,10 +57,11 @@ export default class CoverImageComponent extends React.Component<IComponentProps
 					</>}
 				</div>
 			</div>
-			<div id="slider-landing-text" style={textVisible ? {"display": "none"} : {}}>
+			<div id="slider-landing-text" style={textVisible ? { "display": "none" } : {}}>
 				<div className="landing-text">
 					<Link
-						className={"animated-button inversed diagonal-sliding"}
+						className={"animated-button inversed diagonal-sliding "
+							+ (this.props.location.pathname === "/" ? "pulsing" : "")}
 						to={"/me"}
 						onClick={() => this.showContent()}
 					>

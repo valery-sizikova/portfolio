@@ -19,7 +19,7 @@
 
 #slider-landing-text {
     z-index: 1;
-    width: 300px;
+    width: 320px;
     left: calc(50% - 150px);
     padding-top: 20%;
     .landing-text {

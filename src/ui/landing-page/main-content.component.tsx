@@ -23,9 +23,7 @@ export default class MainContentComponent extends React.Component<IComponentProp
 		const location = this.props.location.pathname;
 		return (
 			<div id="content">
-				<div className="navbar row">
-					<LogoComponent />
-				</div>
+				<LogoComponent linkTo="/me" />
 				<div className="content-container">
 					<section className="menu-container">
 						<Link
