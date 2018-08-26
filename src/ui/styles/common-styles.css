@@ -53,12 +53,6 @@ a.animated-button.inversed:link:hover, a.animated-button.inversed:visited:hover 
 a.animated-button:link:hover:after, a.animated-button:visited:hover:after {
 	height: 450%;
 }
-a.animated-button.diagonal-sliding {
-	border: 2px solid #D24D57;
-}
-a.animated-button.inversed.diagonal-sliding {
-	border: 2px solid #FFF;
-}
 a.animated-button.diagonal-sliding:after {
 	background: #D24D57;
 	-moz-transform: translateX(-50%) translateY(-50%) rotate(25deg);

@@ -1,4 +1,9 @@
 import * as React from 'react';
+import semmtech_logo from "src/ui/styles/images/semmtech_logo.png";
+import customergauge_logo from "src/ui/styles/images/customergauge_logo.png";
+import trendwatching_logo from "src/ui/styles/images/trendwatching_logo.png";
+
+import InfoItemComponent from '../styles/components/info-item.component';
 
 interface IComponentProps { }
 
@@ -13,9 +18,29 @@ export default class MyProjectsComponent extends React.Component<IComponentProps
 	render() {
 		return (
 			<div className="my-projects-container">
-				<h2>MY PROJECTS</h2>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor, nisl ut venenatis bibendum, purus nisl commodo est, sit amet euismod orci nisl ut ipsum. Aliquam erat volutpat. Vivamus interdum metus ex, et venenatis massa pretium quis. Fusce in ipsum massa. Proin non cursus odio. Mauris ut sem euismod, elementum ex vel, sollicitudin sem. Cras a nunc vitae turpis hendrerit pretium.
-				Aliquam luctus leo neque, et tincidunt urna rhoncus ut. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut elementum quam felis, sed finibus dui bibendum sed. Integer tempus orci nec elit eleifend pharetra. Phasellus sodales turpis sit amet sodales gravida. Duis mollis eleifend neque vel dignissim. Nunc lacinia non nunc eu aliquam. Vivamus eget orci id metus aliquet vulputate. Nunc condimentum eros metus, nec ultricies risus interdum id. Praesent malesuada, nunc sit amet tincidunt finibus, tellus mi scelerisque ante, vitae fermentum lorem dui eget nulla.
+				Some description
+				<br />
+				<br />
+				<div className="projects-list grid-x grid-margin-x">
+					<InfoItemComponent
+						link="https://semmtech.com/products"
+						description="Semmtech project"
+						image={<img src={semmtech_logo} alt="Semmtech" />}
+					/>
+
+					<InfoItemComponent
+						link="https://customergauge.com/product"
+						description="Customergauge project"
+						image={<img src={customergauge_logo} alt="Customergauge" />}
+					/>
+
+					<InfoItemComponent
+						link="https://trendwatching.com"
+						description="Trendwatching project"
+						image={<img src={trendwatching_logo} alt="Trandwatching" />}
+					/>
+
+				</div>
 			</div>
 		);
 	}
