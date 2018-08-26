@@ -1,4 +1,11 @@
 import * as React from 'react';
+import InfoItemComponent from '../styles/components/info-item.component';
+import facebook_logo from "src/ui/styles/images/facebook.png";
+import email_logo from "src/ui/styles/images/email.png";
+import linkedin_logo from "src/ui/styles/images/linkedin.png";
+import github_logo from "src/ui/styles/images/github.png";
+import instagram_logo from "src/ui/styles/images/instagram.png";
+
 
 interface IComponentProps { }
 
@@ -13,9 +20,36 @@ export default class MyContactsComponent extends React.Component<IComponentProps
 	render() {
 		return (
 			<div className="my-contacts-container">
-				<h2>MY CONTACTS</h2>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor, nisl ut venenatis bibendum, purus nisl commodo est, sit amet euismod orci nisl ut ipsum. Aliquam erat volutpat. Vivamus interdum metus ex, et venenatis massa pretium quis. Fusce in ipsum massa. Proin non cursus odio. Mauris ut sem euismod, elementum ex vel, sollicitudin sem. Cras a nunc vitae turpis hendrerit pretium.
-				Aliquam luctus leo neque, et tincidunt urna rhoncus ut. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut elementum quam felis, sed finibus dui bibendum sed. Integer tempus orci nec elit eleifend pharetra. Phasellus sodales turpis sit amet sodales gravida. Duis mollis eleifend neque vel dignissim. Nunc lacinia non nunc eu aliquam. Vivamus eget orci id metus aliquet vulputate. Nunc condimentum eros metus, nec ultricies risus interdum id. Praesent malesuada, nunc sit amet tincidunt finibus, tellus mi scelerisque ante, vitae fermentum lorem dui eget nulla.
+				Some description
+				<br />
+				<br />
+				<div className="contact-list grid-x grid-margin-x">
+					<InfoItemComponent
+						link="mailto:valery.sizikova@gmail.com"
+						description="Email"
+						image={<img src={email_logo} alt="Email" />}
+					/>
+					<InfoItemComponent
+						link="https://www.linkedin.com/in/vsizikova/"
+						description="Linkedin"
+						image={<img src={linkedin_logo} alt="Linkedin" />}
+					/>
+					<InfoItemComponent
+						link="https://github.com/valery-sizikova"
+						description="Github"
+						image={<img src={github_logo} alt="Github" />}
+					/>
+					<InfoItemComponent
+						link="https://www.facebook.com/valery.sizikova"
+						description="Facebook"
+						image={<img src={facebook_logo} alt="Facebook" />}
+					/>
+					<InfoItemComponent
+						link="https://www.instagram.com/sharlsharl/"
+						description="Instagram"
+						image={<img src={instagram_logo} alt="Instagram" />}
+					/>
+				</div>
 			</div>
 		);
 	}

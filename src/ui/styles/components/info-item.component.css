@@ -3,6 +3,7 @@
 	background-color: #1468a026;
 	padding: 20px;
 	color: black;
+	margin-bottom: 10px;
 
 	&:hover, &:visited {
 		color: black;
@@ -10,6 +11,10 @@
 
 	&:hover {
 		background-color: #1468a046;
+
+		.info-item-image {
+			transform: scale(1.15);
+		}
 	}
 
 	.info-item-description {
@@ -22,6 +27,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		transition: transform 0.5s linear;
 
 		img {
 			max-height: 100%;
