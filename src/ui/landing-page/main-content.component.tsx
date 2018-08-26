@@ -5,6 +5,7 @@ import { TransitionGroup, CSSTransition, Transition } from 'react-transition-gro
 import MyProjectsComponent from '../my-projects/my-projects.component';
 import MyContactsComponent from '../my-contacts/my-contacts.component';
 import MeComponent from '../me/me.component';
+import LogoComponent from '../styles/components/logo.component';
 
 interface IComponentProps {
 	location: any;
@@ -23,7 +24,7 @@ export default class MainContentComponent extends React.Component<IComponentProp
 		return (
 			<div id="content">
 				<div className="navbar row">
-					<div className="logo"></div>
+					<LogoComponent />
 				</div>
 				<div className="content-container">
 					<section className="menu-container">
