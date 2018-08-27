@@ -1,9 +1,10 @@
 import * as React from 'react';
+
+import InfoItemComponent from '../_common/components/info-item.component';
+
 import semmtech_logo from "../_common/images/semmtech_logo.png";
 import customergauge_logo from "../_common/images/customergauge_logo.png";
 import trendwatching_logo from "../_common/images/trendwatching_logo.png";
-
-import InfoItemComponent from '../_common/components/info-item.component';
 
 export default class MyProjectsComponent extends React.Component<{}, {}> {
 	render() {

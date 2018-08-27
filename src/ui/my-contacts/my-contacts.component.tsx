@@ -1,21 +1,14 @@
 import * as React from 'react';
+
 import InfoItemComponent from '../_common/components/info-item.component';
+
 import facebook_logo from "../_common/images/facebook.png";
 import email_logo from "../_common/images/email.png";
 import linkedin_logo from "../_common/images/linkedin.png";
 import github_logo from "../_common/images/github.png";
 import instagram_logo from "../_common/images/instagram.png";
 
-interface IComponentProps { }
-
-interface IComponentState { }
-
-export default class MyContactsComponent extends React.Component<IComponentProps, IComponentState> {
-	constructor(props: IComponentProps) {
-		super(props);
-		this.state = {};
-	}
-
+export default class MyContactsComponent extends React.Component<{}, {}> {
 	render() {
 		return (
 			<div className="my-contacts-container">
