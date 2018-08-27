@@ -2,7 +2,7 @@
     height: 100vh;
     position: relative;
 
-    #content {
+    #main-page-content {
         overflow-y: hidden;
         height: 100%;
         width: 100%;

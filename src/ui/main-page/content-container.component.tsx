@@ -2,9 +2,9 @@ import * as React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
-import MyProjectsComponent from '../my-projects/my-projects.component';
-import MyContactsComponent from '../my-contacts/my-contacts.component';
-import MeComponent from '../me/me.component';
+import MyContactsComponent from './../my-contacts/my-contacts.component';
+import MeComponent from './../me/me.component';
+import MyProjectsComponent from './../my-projects/my-projects.component';
 
 interface IComponentProps {
 	location: any;

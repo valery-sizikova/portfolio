@@ -25,16 +25,12 @@ export default class LandingImageComponent extends React.Component<IComponentPro
 	}
 
 	showContent() {
-		const slider = document.getElementById("slider-landing-image");
-		const toggle = document.getElementById("slider-landing-text");
+		const sliderImage = document.getElementById("slider-landing-image");
+		const sliderText = document.getElementById("slider-landing-text");
 		const content = document.getElementById(this.props.contentElementId);
-		if (slider) {
-			slider.setAttribute("class", "hidden");
-		}
-		if (toggle) {
-			toggle.setAttribute("class", "hidden");
-		}
-		if (content) {
+		if (sliderImage && sliderText && content) {
+			sliderImage.setAttribute("class", "hidden");
+			sliderText.setAttribute("class", "hidden");
 			content.setAttribute("class", "shown");
 		}
 		this.setState({

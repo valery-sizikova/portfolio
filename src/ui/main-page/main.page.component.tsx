@@ -1,7 +1,9 @@
 import * as React from 'react';
+
+import LogoComponent from './../_common/components/logo.component';
+
 import LandingImageComponent from './landing-image.component';
 import ContentContainerComponent from './content-container.component';
-import LogoComponent from '../_common/components/logo.component';
 import MenuComponent from './menu.component';
 
 interface IComponentProps {
@@ -12,7 +14,7 @@ export default class MainPageComponent extends React.Component<IComponentProps, 
 	render() {
 		return (
 			<div className="main-page">
-				<div id="content">
+				<div id="main-page-content">
 					<LogoComponent linkTo="/me" />
 					<div className="main-page-content-container">
 						<MenuComponent location={this.props.location} />
@@ -23,7 +25,7 @@ export default class MainPageComponent extends React.Component<IComponentProps, 
 				</div>
 				<LandingImageComponent
 					location={this.props.location}
-					contentElementId="content"
+					contentElementId="main-page-content"
 				/>
 			</div>
 		);

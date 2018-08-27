@@ -1,4 +1,4 @@
-#slider-landing-image, #slider-landing-text {
+#slider-landing-text, #slider-landing-image {
     overflow-y: hidden;
     height: 100%;
     width: 100%;
@@ -10,23 +10,11 @@
     transition-timing-function: ease-in-out;
 }
 
-#slider-landing-image {
-    &.hidden {
-        bottom: 100%;
-        opacity: 0;
-    }
-}
-
 #slider-landing-text {
     z-index: 1;
     width: 320px;
     left: calc(50% - 150px);
     padding-top: 20%;
-    .landing-text {
-        width: 300px;
-        position: absolute;
-        left: calc(50% - 150px);
-    }
     
     &.hidden {
         height: 100px;
@@ -34,6 +22,19 @@
         padding-top: 0;
 		pointer-events: none;
     }
+}
+
+#slider-landing-image {
+    &.hidden {
+        bottom: 100%;
+        opacity: 0;
+    }
+}
+
+.landing-text {
+    width: 300px;
+    position: absolute;
+    left: calc(50% - 150px);
 }
 
 .landing-image {
