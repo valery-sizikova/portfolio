@@ -42,7 +42,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    background-image: url("D:/personal_projects/portfolio/src/ui/styles/images/landing-image.png");
+    background-image: url("./ui/styles/images/landing-image.png");
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;

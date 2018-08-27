@@ -17,7 +17,7 @@
 		height: 20%;
 		text-transform: uppercase;
 		text-align: center;
-		background-image: url("D:/personal_projects/portfolio/src/ui/styles/images/logo-name.png");
+		background-image: url("./ui/styles/images/logo-name.png");
 		background-size: 110%;
 		background-position: center;
 	}

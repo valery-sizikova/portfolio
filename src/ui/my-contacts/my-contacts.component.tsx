@@ -1,11 +1,10 @@
 import * as React from 'react';
 import InfoItemComponent from '../styles/components/info-item.component';
-import facebook_logo from "src/ui/styles/images/facebook.png";
-import email_logo from "src/ui/styles/images/email.png";
-import linkedin_logo from "src/ui/styles/images/linkedin.png";
-import github_logo from "src/ui/styles/images/github.png";
-import instagram_logo from "src/ui/styles/images/instagram.png";
-
+import facebook_logo from "../styles/images/facebook.png";
+import email_logo from "../styles/images/email.png";
+import linkedin_logo from "../styles/images/linkedin.png";
+import github_logo from "../styles/images/github.png";
+import instagram_logo from "../styles/images/instagram.png";
 
 interface IComponentProps { }
 
@@ -21,6 +20,12 @@ export default class MyContactsComponent extends React.Component<IComponentProps
 		return (
 			<div className="my-contacts-container">
 				Some description
+				<br />
+				<a
+					target="_blank"
+					href={"https://drive.google.com/file/d/1uZx4g2gSUTlWbac499k2GpU4Gvlr1jzw/view?usp=sharing"}>
+					CV
+				</a>
 				<br />
 				<br />
 				<div className="contact-list grid-x grid-margin-x">

@@ -4,7 +4,6 @@
 @import "./ui/styles/components/logo.component.css";
 @import "./ui/styles/components/info-item.component.css";
 
-@import "./ui/another/another.page.component.css";
 @import "./ui/landing-page/landing.page.component.css";
 @import "./ui/landing-page/cover-image.component.css";
 @import "./ui/landing-page/main-content.component.css";
