@@ -5,11 +5,15 @@
 @import "./ui/_common/components/logo.component.css";
 @import "./ui/_common/components/info-item.component.css";
 
-@import "./ui/landing-page/landing.page.component.css";
-@import "./ui/landing-page/cover-image.component.css";
-@import "./ui/landing-page/main-content.component.css";
+@import "./ui/main-page/main.page.component.css";
+@import "./ui/main-page/landing-image.component.css";
+@import "./ui/main-page/menu.component.css";
+@import "./ui/main-page/content-container.component.css";
+
 @import "./ui/me/me.component.css";
+
 @import "./ui/my-contacts/my-contacts.component.css";
+
 @import "./ui/my-projects/my-projects.component.css";
 
 body {

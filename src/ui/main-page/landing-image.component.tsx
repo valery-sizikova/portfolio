@@ -10,7 +10,7 @@ interface IComponentState {
 	isShown: boolean;
 }
 
-export default class CoverImageComponent extends React.Component<IComponentProps, IComponentState> {
+export default class LandingImageComponent extends React.Component<IComponentProps, IComponentState> {
 	constructor(props: IComponentProps) {
 		super(props);
 		this.state = {

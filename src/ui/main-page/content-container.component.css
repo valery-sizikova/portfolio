@@ -1,0 +1,6 @@
+.content-container {
+	overflow-y: auto;
+	width: 100%;
+	position: relative;
+	padding: 20px 50px;
+}
