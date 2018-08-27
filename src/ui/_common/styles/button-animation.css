@@ -23,7 +23,7 @@ a.animated-button.selected:link, a.animated-button.selected:visited {
 	background-color: #D24D57;
 }
 a.animated-button.small:link, a.animated-button.small:visited {
-	padding: 4px 0;
+	padding: 8px 0;
 }
 a.animated-button.pulsing:link, a.animated-button.pulsing:visited {
 	animation: puls 2s linear infinite;

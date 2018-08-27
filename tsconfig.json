@@ -22,7 +22,6 @@
     "noUnusedLocals": false,
     "types": [
       "node",
-      "reflect-metadata",
       "mocha"
     ],
     "experimentalDecorators": true,
