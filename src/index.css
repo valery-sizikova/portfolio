@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
 
-@import "./ui/styles/common-styles.css";
-@import "./ui/styles/components/logo.component.css";
-@import "./ui/styles/components/info-item.component.css";
+@import "./ui/_common/styles/button-animation.css";
+@import "./ui/_common/styles/rerouting-animation.css";
+@import "./ui/_common/components/logo.component.css";
+@import "./ui/_common/components/info-item.component.css";
 
 @import "./ui/landing-page/landing.page.component.css";
 @import "./ui/landing-page/cover-image.component.css";

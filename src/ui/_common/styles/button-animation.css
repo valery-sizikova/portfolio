@@ -1,5 +1,3 @@
-/* Animated buttons */
-
 a.animated-button:link, a.animated-button:visited {
 	position: relative;
 	display: block;
@@ -66,23 +64,6 @@ a.animated-button.diagonal-sliding:after {
 }
 a.animated-button.inversed.diagonal-sliding:after {
 	background: #FFF;
-}
-
-
-/* Transitions styles on rerouting */
-
-.fade-enter {
-  opacity: 0;
-  z-index: 1;
-}
-
-.fade-enter.fade-enter-active {
-  opacity: 1;
-  transition: opacity 800ms ease-in;
-}
-
-.fade-exit {
-	display: none;
 }
 
 @keyframes puls {

@@ -1,10 +1,10 @@
 import * as React from 'react';
-import InfoItemComponent from '../styles/components/info-item.component';
-import facebook_logo from "../styles/images/facebook.png";
-import email_logo from "../styles/images/email.png";
-import linkedin_logo from "../styles/images/linkedin.png";
-import github_logo from "../styles/images/github.png";
-import instagram_logo from "../styles/images/instagram.png";
+import InfoItemComponent from '../_common/components/info-item.component';
+import facebook_logo from "../_common/images/facebook.png";
+import email_logo from "../_common/images/email.png";
+import linkedin_logo from "../_common/images/linkedin.png";
+import github_logo from "../_common/images/github.png";
+import instagram_logo from "../_common/images/instagram.png";
 
 interface IComponentProps { }
 

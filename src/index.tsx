@@ -1,17 +1,21 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import registerServiceWorker from './registerServiceWorker';
-import { Routes } from 'src/routes';
+
+import LandingPageComponent from './ui/landing-page/landing.page.component';
 
 import './styles.css';
 
 ReactDOM.render(
-  <Router>
-    {Routes.getRoutes(location)}
-  </Router>,
-  document.getElementById('root') as HTMLElement
+	<Router>
+		<Switch>
+			{/* Default route will be used in case if nothing matches */}
+			<Route render={({ location }) => <LandingPageComponent location={location} />} />
+		</Switch>
+	</Router>,
+	document.getElementById('root') as HTMLElement
 );
 
 registerServiceWorker();

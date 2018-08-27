@@ -5,7 +5,7 @@ import LandingPageComponent from "./landing.page.component";
 
 describe('Landing page component', () => {
   it('renders snapshots', () => {
-    const wrapper = shallow(<LandingPageComponent />);
+    const wrapper = shallow(<LandingPageComponent location={""}/>);
     expect(wrapper).toMatchSnapshot()
   })
 })
