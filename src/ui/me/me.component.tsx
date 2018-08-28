@@ -19,7 +19,7 @@ export default class MeComponent extends React.Component<{}, {}> {
 			Ok, enough about weather. In Russian we don't really have a word for "small talk", instead we say "to talk about weather" as a reference to what people do when they don't really know each other and experience this awkwardness familiar to everyone. So hence my long and awkward introduction.
 			<br />
 			<br />
-			My name is Valery Sizikova and I am a software engineer. I enjoy coming to work every day and prototyping, designing, and coding web applications. That's the best choice I ever made - this activity occupies me for 8 hours a day and I am happy that it's the opposite of boring. I like to dive into the requirements and reasonably question them to get to the bottom of feature purpose and its future use. Understanding of the end goal is very important to me so I always seek for extra information.
+			My name is Valerie Sizikova and I am a software engineer. I enjoy coming to work every day and prototyping, designing, and coding web applications. That's the best choice I ever made - this activity occupies me for 8 hours a day and I am happy that it's the opposite of boring. I like to dive into the requirements and reasonably question them to get to the bottom of feature purpose and its future use. Understanding of the end goal is very important to me so I always seek for extra information.
 			<br />
 			<br />
 			I enjoy working on creating user interfaces the most, but I grew to love being able to implement features on the backend side because it allows me to complete user stories from start to end (then they are like my babies). Also it is a nice brain teaser to switch between IDEs from time to time.
