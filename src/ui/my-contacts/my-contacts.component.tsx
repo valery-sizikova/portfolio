@@ -6,7 +6,6 @@ import facebook_logo from "./../_common/images/facebook.png";
 import email_logo from "./../_common/images/email.png";
 import linkedin_logo from "./../_common/images/linkedin.png";
 import github_logo from "./../_common/images/github.png";
-import instagram_logo from "./../_common/images/instagram.png";
 
 export default class MyContactsComponent extends React.Component<{}, {}> {
 	render() {
@@ -20,32 +19,32 @@ export default class MyContactsComponent extends React.Component<{}, {}> {
 					CV
 				</a>
 				<br />
+				<hr />
 				<br />
 				<div className="contact-list grid-x grid-margin-x">
 					<InfoItemComponent
 						link="mailto:valery.sizikova@gmail.com"
-						description="Email"
+						title="Email"
+						description={<p>The best option to reach me is to write me an email.</p>}
 						image={<img src={email_logo} alt="Email" />}
 					/>
 					<InfoItemComponent
 						link="https://www.linkedin.com/in/vsizikova/"
-						description="Linkedin"
+						title="Linkedin"
+						description={<p>I am that person who managed to unsubscribe from ALL Linkedin notifications so chances are low that I'm going to see your message on time.</p>}
 						image={<img src={linkedin_logo} alt="Linkedin" />}
 					/>
 					<InfoItemComponent
 						link="https://github.com/valery-sizikova"
-						description="Github"
+						title="Github"
+						description={<p>This portfolio is hosted on Github pages so it must be easy to guess my profile id but ok, here is the link.</p>}
 						image={<img src={github_logo} alt="Github" />}
 					/>
 					<InfoItemComponent
 						link="https://www.facebook.com/valery.sizikova"
-						description="Facebook"
+						title="Facebook"
+						description={<p>I am not an active Facebook user but look, I am not embarresed to share the link to my profile. Nothing interesting there though.</p>}
 						image={<img src={facebook_logo} alt="Facebook" />}
-					/>
-					<InfoItemComponent
-						link="https://www.instagram.com/sharlsharl/"
-						description="Instagram"
-						image={<img src={instagram_logo} alt="Instagram" />}
 					/>
 				</div>
 			</div>
