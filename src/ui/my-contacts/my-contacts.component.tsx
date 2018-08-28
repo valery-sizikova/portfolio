@@ -44,7 +44,7 @@ export default class MyContactsComponent extends React.Component<{}, {}> {
 					<InfoItemComponent
 						link="https://www.facebook.com/valery.sizikova"
 						title="Facebook"
-						description={<p>I am not an active Facebook user but look, I am not embarresed to share the link to my profile. Nothing interesting there though.</p>}
+						description={<p>I am not an active Facebook user but look, I am not embarrassed to share the link to my profile. Nothing interesting there though.</p>}
 						image={<img src={facebook_logo} alt="Facebook" />}
 					/>
 				</div>
