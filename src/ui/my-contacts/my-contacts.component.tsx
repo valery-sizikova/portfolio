@@ -12,7 +12,7 @@ export default class MyContactsComponent extends React.Component<{}, {}> {
 	render() {
 		return (
 			<div className="my-contacts-container">
-				Some description
+				All sorts of links to all sorts of resources with info about me.
 				<br />
 				<hr />
 				<br />

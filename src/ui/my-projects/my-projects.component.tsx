@@ -10,7 +10,7 @@ export default class MyProjectsComponent extends React.Component<{}, {}> {
 	render() {
 		return (
 			<div className="my-projects-container">
-				Some description
+				It's not fashionable any more to add screenshots of your work photoshoped into stock photos of laptops. So I will just link the projects I worked on.
 				<br />
 				<hr />
 				<br />
