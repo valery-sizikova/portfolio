@@ -6,18 +6,13 @@ import facebook_logo from "./../_common/images/facebook.png";
 import email_logo from "./../_common/images/email.png";
 import linkedin_logo from "./../_common/images/linkedin.png";
 import github_logo from "./../_common/images/github.png";
+import cv_logo from "./../_common/images/cv.png";
 
 export default class MyContactsComponent extends React.Component<{}, {}> {
 	render() {
 		return (
 			<div className="my-contacts-container">
 				Some description
-				<br />
-				<a
-					target="_blank"
-					href={"https://drive.google.com/file/d/1uZx4g2gSUTlWbac499k2GpU4Gvlr1jzw/view?usp=sharing"}>
-					CV
-				</a>
 				<br />
 				<hr />
 				<br />
@@ -27,6 +22,12 @@ export default class MyContactsComponent extends React.Component<{}, {}> {
 						title="Email"
 						description={<p>The best option to reach me is to write me an email.</p>}
 						image={<img src={email_logo} alt="Email" />}
+					/>
+					<InfoItemComponent
+						link="https://drive.google.com/file/d/1uZx4g2gSUTlWbac499k2GpU4Gvlr1jzw/view?usp=sharing"
+						title="CV"
+						description={<p>You can also see my CV on Google Drive.</p>}
+						image={<img src={cv_logo} alt="CV" />}
 					/>
 					<InfoItemComponent
 						link="https://www.linkedin.com/in/vsizikova/"
