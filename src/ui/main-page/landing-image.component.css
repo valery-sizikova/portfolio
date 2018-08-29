@@ -43,7 +43,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    background-image: url("./ui/_common/images/landing-image.png");
+    background-image: url("/landing_image.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
