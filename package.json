@@ -1,7 +1,7 @@
 {
 	"name": "valerie-s-portfolio",
 	"description": "Valerie S Portfolio",
-	"homepage": "http:///valery-sizikova.github.io/portfolio",
+	"homepage": "http://valery-sizikova.github.io/portfolio",
 	"version": "0.1.0",
 	"private": true,
 	"scripts": {
@@ -15,7 +15,7 @@
 		"test-update": "react-scripts-ts test -u --env=jsdom --watchAll",
 		"eject": "react-scripts-ts eject",
 		"predeploy": "npm run build",
-		"deploy": "gh-pages -d build"
+		"deploy": "gh-pages -b master -d build"
 	},
 	"dependencies": {
 		"@types/react": "16.4.11",
