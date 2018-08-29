@@ -38,7 +38,7 @@ export default class MyContactsComponent extends React.Component<{}, {}> {
 					<InfoItemComponent
 						link="https://github.com/valery-sizikova"
 						title="Github"
-						description={<p>This portfolio is hosted on Github pages so it must be easy to guess my profile id but ok, here is the link.</p>}
+                        description={<p>Here is the link to my Github profile. I don't have many things there but this project is there.</p>}
 						image={<img src={github_logo} alt="Github" />}
 					/>
 					<InfoItemComponent
